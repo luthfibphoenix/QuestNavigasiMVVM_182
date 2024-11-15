@@ -1,6 +1,7 @@
 package com.example.week7.ui.view
 
 
+import android.provider.ContactsContract.CommonDataKinds.Email
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -98,10 +99,10 @@ fun FormulirView(
             placeholder = { Text("Masukan Alamat Anda") }
         )
         TextField(modifier = Modifier.fillMaxWidth().padding(5.dp),
-            value = alamat,
-            onValueChange = {alamat = it},
-            label = { Text("Email") },
-            placeholder = { Text("Masukan Email Anda") }
+            value = nim,
+            onValueChange = {nim = it},
+            label = { Text("NIM") },
+            placeholder = { Text("Masukan NIM Anda") }
         )
         Button(modifier = Modifier.padding(vertical = 10.dp),onClick ={
             onClickButton(listData)
