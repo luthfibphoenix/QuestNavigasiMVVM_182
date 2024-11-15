@@ -97,6 +97,12 @@ fun FormulirView(
             label = { Text("Alamat") },
             placeholder = { Text("Masukan Alamat Anda") }
         )
+        TextField(modifier = Modifier.fillMaxWidth().padding(5.dp),
+            value = alamat,
+            onValueChange = {alamat = it},
+            label = { Text("Email") },
+            placeholder = { Text("Masukan Email Anda") }
+        )
         Button(modifier = Modifier.padding(vertical = 10.dp),onClick ={
             onClickButton(listData)
         }) {
