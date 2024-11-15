@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
 import com.example.week7.model.Mahasiswa
 
 
@@ -18,7 +19,8 @@ import com.example.week7.model.Mahasiswa
 
 @Composable
 fun TampilMahasiswaView(
-    mhs:Mahasiswa
+    mhs:Mahasiswa,
+    navController: NavHostController
 ){
     Column(modifier = Modifier.fillMaxSize()) {
         TampilData(
