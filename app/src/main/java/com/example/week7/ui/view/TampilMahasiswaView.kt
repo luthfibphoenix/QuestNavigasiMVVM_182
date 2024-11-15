@@ -41,6 +41,10 @@ fun TampilMahasiswaView(
             Judul = "NoHP",
             isinya = mhs.noHP
         )
+        TampilData(
+            Judul = "NIM",
+            isinya = mhs.nim
+        )
     }
 }
 @Composable
