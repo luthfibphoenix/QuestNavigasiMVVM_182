@@ -17,9 +17,12 @@ class MahasiswaViewModel: ViewModel() {
     ){
         _uiState.update { data ->
             data.copy(
-                nama = ls[0],
-                gender = ls[1],
-                alamat = ls[2]
+                Nama = ls[0],
+                Gender = ls[1],
+                Alamat = ls[2],
+                Email = ls[3],
+                NoHP = ls[4],
+                Nim = ls[5]
             )
         }
     }

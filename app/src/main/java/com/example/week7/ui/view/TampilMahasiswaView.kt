@@ -26,27 +26,27 @@ fun TampilMahasiswaView(
     Column(modifier = Modifier.fillMaxSize()) {
         TampilData(
             Judul = "Nama",
-            isinya = mhs.nama
+            isinya = mhs.Nama
         )
         TampilData(
             Judul = "Jenis Kelamin",
-            isinya = mhs.gender
-        )
-        TampilData(
-            Judul = "Email",
-            isinya = mhs.email
-        )
-        TampilData(
-            Judul = "NoHP",
-            isinya = mhs.noHP
+            isinya = mhs.Gender
         )
         TampilData(
             Judul = "Alamat",
-            isinya = mhs.alamat
+            isinya = mhs.Alamat
+        )
+        TampilData(
+            Judul = "Email",
+            isinya = mhs.Email
+        )
+        TampilData(
+            Judul = "No Handphone",
+            isinya = mhs.NoHP
         )
         TampilData(
             Judul = "NIM",
-            isinya = mhs.nim
+            isinya = mhs.Nim
         )
 
         Button(onClick = { navController.popBackStack() }) { // Navigate back to the previous screen
